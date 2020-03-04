@@ -1,32 +1,38 @@
 
-server:  port: 7001
-  
-spring:  profiles:    active: dev
-   
-eureka:
-   client:
-      serviceUrl:
-         defaultZone: http://eureka-server1:8761/eureka/
+spring:
+  profiles:
+    active: dev
+  application:
+    name: config-client
     
+server:
+  port: 7001
+  
 ---
-
-server:  port: 7002
+spring:
+  profiles: test
+  application:
+    name: config-client
+    
+server:
+  port: 7002
   
-spring:  profiles: test
+---
+  
+  
+spring:
+  profiles: prod
+  application:
+    name: config-client
+    
+server:
+  port: 7003
   
 
-eureka:
-   client:
-      serviceUrl:
-         defaultZone: http://eureka-server1:8761/eureka/
+  
+   
+
          
----
-
-server:  port: 7003
-
-spring:  profiles: prod
-
-eureka:
-   client:
-      serviceUrl:
-         defaultZone: http://eureka-server1:8761/eureka/
+  
+   
+   
