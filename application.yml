@@ -1,0 +1,17 @@
+
+server:  port: 7001
+  
+spring:  profiles:    active: dev
+    
+---
+
+server:  port: 7002
+  
+spring:  profiles: test
+  
+  
+---
+
+server:  port: 7003
+
+spring:  profiles: prod
