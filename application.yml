@@ -2,6 +2,11 @@
 server:  port: 7001
   
 spring:  profiles:    active: dev
+   
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://eureka-server1:8761/eureka/
     
 ---
 
@@ -9,9 +14,19 @@ server:  port: 7002
   
 spring:  profiles: test
   
-  
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://eureka-server1:8761/eureka/
+         
 ---
 
 server:  port: 7003
 
 spring:  profiles: prod
+
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://eureka-server1:8761/eureka/
