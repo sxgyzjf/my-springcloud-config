@@ -6,7 +6,7 @@ spring:
     name: config-client
     
 server:
-  port: 7001
+  port: 7101
   
 ---
 spring:
@@ -15,7 +15,7 @@ spring:
     name: config-client
     
 server:
-  port: 7002
+  port: 7102
   
 ---
   
@@ -26,7 +26,7 @@ spring:
     name: config-client
     
 server:
-  port: 7003
+  port: 7103
   
 
   
