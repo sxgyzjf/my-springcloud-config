@@ -2,31 +2,30 @@
 spring:
   profiles:
     active: dev
-  application:
-    name: config-client
-    
+   
+---
+
 server:
   port: 7101
   
----
 spring:
-  profiles: test
+  profiles: dev
   application:
     name: config-client
     
-server:
-  port: 7102
+
   
 ---
-  
+
+server:
+  port: 7102 
   
 spring:
   profiles: prod
   application:
     name: config-client
     
-server:
-  port: 7103
+
   
 
   
