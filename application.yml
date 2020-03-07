@@ -14,7 +14,10 @@ spring:
   application:
     name: config-client
     
-
+myparam:
+  author: zjf
+  date: 2020-03-07
+  remark: 测试springcloud bus服务总线
   
 ---
 
@@ -26,7 +29,10 @@ spring:
   application:
     name: config-client
     
-
+myparam:
+  author: zjf
+  date: 2020-03-07
+  remark: 测试springcloud bus服务总线
   
 
   
